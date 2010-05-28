@@ -1,3 +1,7 @@
+// Copyright (C) 2010, Aret N Carlsen (aretcarlsen@autonomoustools.com).
+// State machine implementation. Borrows heavily from Simon Tatham (http://pobox.com/~anakin/)
+// who in turn borrowed heavily from Tom Duff (http://www.iq0.com/).
+// Licensed under GPLv3 and later versions. See license.txt or <http://www.gnu.org/licenses/>.
 
 
 #pragma once

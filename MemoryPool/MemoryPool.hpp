@@ -1,3 +1,7 @@
+// Copyright (C) 2010, Aret N Carlsen (aretcarlsen@autonomoustools.com).
+// MemoryPool implementaton to support limits on memory distribution for a particular purpose.
+// Licensed under GPLv3 and later versions. See license.txt or <http://www.gnu.org/licenses/>.
+
 
 #pragma once
 

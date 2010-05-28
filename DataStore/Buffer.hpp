@@ -1,4 +1,7 @@
-// DataStore::DynamicArray declaration
+// Copyright (C) 2010, Aret N Carlsen (aretcarlsen@autonomoustools.com).
+// Array-based data buffer classes (C++).
+// Licensed under GPLv3 and later versions. See license.txt or <http://www.gnu.org/licenses/>.
+
 
 #pragma once
 
