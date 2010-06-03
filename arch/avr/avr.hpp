@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "../../globals.hpp"
+
 // Flash storage
 #include <avr/pgmspace.h>
 // Interrupts

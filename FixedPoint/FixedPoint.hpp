@@ -7,8 +7,6 @@
 
 #pragma once
 
-#include "../globals.hpp"
-
 
 // Native storage type, number of significand bits, and intermediate calculation type.
 template <typename Native_t, uint8_t SignificandBits, typename Intermediate_t = int32_t>
