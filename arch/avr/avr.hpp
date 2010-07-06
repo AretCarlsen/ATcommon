@@ -19,6 +19,9 @@
 // Pins (C++ class wrappers)
 #include <AVR_Objects/io.hpp>
 
+// Memset
+#include <string.h>
+
 // Define PROGMEM and PSTR properly, so as to avoid avr-gcc warnings.
 #undef PROGMEM
 #define PROGMEM __attribute__(( section(".progmem.data") ))
@@ -53,4 +56,6 @@ inline uint8_t memcmp(const void* s1_void, const void* s2_void, uint8_t n){
 }
 
 #include "DynamicMemory.hpp"
+
+#include "debug.hpp"
 

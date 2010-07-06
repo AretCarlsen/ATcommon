@@ -7,3 +7,5 @@
 #define __MIN(type) ((type)-1 < 1?__MIN_SIGNED(type):(type)0)
 #define __MAX(type) ((type)~__MIN(type))
 
+#include "debug.hpp"
+

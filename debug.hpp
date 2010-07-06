@@ -1,0 +1,3 @@
+
+#define DEBUGprint_HEARTBEAT(...) DEBUG_HEARTBEAT(DEBUGprint(__VA_ARGS__))
+

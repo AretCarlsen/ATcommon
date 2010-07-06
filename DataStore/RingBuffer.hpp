@@ -136,7 +136,7 @@ public:
 
 // FIFO push and pop
 
-  Status::Status_t sinkData(Data_t new_value){
+  Status::Status_t sinkData(const Data_t &new_value){
 // Check if full
     if(is_full())
       return Status::Status__Bad;
@@ -145,12 +145,12 @@ public:
     return Status::Status__Good;
   }
 
-  Status::Status_t sourceData(Data_t *new_value){
+  Status::Status_t sourceData(Data_t &new_value){
 // Check if empty
     if(is_empty())
       return Status::Status__Bad;
 
-    *new_value = get();
+    new_value = get();
     return Status::Status__Good;
   }
 };
