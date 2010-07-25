@@ -1,3 +1,24 @@
+
+#undef DEBUGprint
+#undef DEBUG
+#define DEBUG
+
+// Debugging
+#ifdef DEBUG
+#include <stdio.h>
+inline void DEBUGprintByte(uint8_t byte){ fputc(byte, stderr); }
+//#define DEBUGprint(args) (fprintf(stderr, "DEBUG SSPPDecoder.cpp: " args))
+#define WHERESTR  "[file %s, line %d]: "
+#define WHEREARG  __FILE__, __LINE__
+#define DEBUGprint(...)       { fprintf(stderr, ##__VA_ARGS__) ; fflush(stderr) ; }
+// #define DEBUGprint(_fmt, ...)  DEBUGPRINT2(WHERESTR _fmt, WHEREARG, ##__VA_ARGS__)
+//#define DEBUGprint(_fmt, ...)  DEBUGPRINT2(_fmt, ##__VA_ARGS__)
+#else
+#define DEBUGprint(...)
+#endif
+
+#define EEMEM
+
 // MEP
 //#define DEBUG_MEP(...) __VA_ARGS__
 #define DEBUG_MEP(...) ;

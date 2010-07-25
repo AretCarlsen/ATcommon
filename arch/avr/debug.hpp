@@ -1,3 +1,10 @@
+
+#ifdef DEBUG
+#include <avrlib/rprintf.h>
+void DEBUGflush();
+#define DEBUGprint(args...) do{ rprintf(args); DEBUGflush(); } while(0)
+#endif
+
 // MEP
 //#define DEBUG_MEP(...) __VA_ARGS__
 #define DEBUG_MEP(...) ;
